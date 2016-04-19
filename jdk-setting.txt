@@ -1,0 +1,38 @@
+一、查找
+windows：
+set java_home:查看JDK安装路径
+java -version:查看JDK版本
+
+
+linux：
+whereis java
+which java （java执行路径）
+echo $JAVA_HOME
+echo $PATH
+
+
+二：下面是配置linux的环境变量：(记得source .bash_profile)
+. 修改/etc/profile文件 （全局所有用户）
+
+
+vi 此文件/etc/profile
+在profile文件末尾加入：
+export JAVA_HOME=/usr/share/jdk1.6.0_20
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+.修改.bash_profile文件 （某个用户权限使用这些环境变量）
+.bash_profile文件末尾加入：
+
+
+export JAVA_HOME=/usr/share/jdk1.6.0_20
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+.shell终端执行下列命令： （临时用）
+export JAVA_HOME=/usr/share/jdk1.6.0_14
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+
+三. 卸载jdk
+·找到jdk安装目录的_uninst子目录
+·在shell终端执行命令./uninstall.sh即可卸载jdk。
