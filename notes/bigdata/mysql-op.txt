@@ -1,0 +1,8 @@
+# 显示表相关信息
+show table status like 'tableName';
+
+# 修改字段
+alter table 表名 modify column 字段名 类型;
+alter table tableName modify column columnName varchar(18);
+
+SELECT [column_name,column_name] FROM table_name ORDER BY [column_name,column_name] ASC|DESC;

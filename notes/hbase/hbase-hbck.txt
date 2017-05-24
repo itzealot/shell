@@ -1,0 +1,48 @@
+Unrecognized option:--h
+Usage: fsck [opts] {only tables}
+ where [opts] are:
+   -help Display help options (this)
+   -details Display full report of all regions.
+   -timelag <timeInSeconds>  Process only regions that  have not experienced any metadata updates in the last  <timeInSeconds> seconds.
+   -sleepBeforeRerun <timeInSeconds> Sleep this many seconds before checking if the fix worked if run with -fix
+   -summary Print only summary of the tables and status.
+   -metaonly Only check the state of the hbase:meta table.
+   -sidelineDir <hdfs://> HDFS path to backup existing meta.
+   -boundaries Verify that regions boundaries are the same between META and store files.
+   -exclusive Abort if another hbck is exclusive or fixing.
+   -disableBalancer Disable the load balancer.
+
+  Metadata Repair options: (expert features, use with caution!)
+   -fix              Try to fix region assignments.  This is for backwards compatiblity
+   -fixAssignments   Try to fix region assignments.  Replaces the old -fix
+   -fixMeta          Try to fix meta problems.  This assumes HDFS region info is good.
+   -noHdfsChecking   Don't load/check region info from HDFS. Assumes hbase:meta region info is good. Won't check/fix any HDFS issue, e.g. hole, orphan, or overlap
+   -fixHdfsHoles     Try to fix region holes in hdfs.
+   -fixHdfsOrphans   Try to fix region dirs with no .regioninfo file in hdfs
+   -fixTableOrphans  Try to fix table dirs with no .tableinfo file in hdfs (online mode only)
+   -fixHdfsOverlaps  Try to fix region overlaps in hdfs.
+   -fixVersionFile   Try to fix missing hbase.version file in hdfs.
+   -maxMerge <n>     When fixing region overlaps, allow at most <n> regions to merge. (n=5 by default)
+   -sidelineBigOverlaps  When fixing region overlaps, allow to sideline big overlaps
+   -maxOverlapsToSideline <n>  When fixing region overlaps, allow at most <n> regions to sideline per group. (n=2 by default)
+   -fixSplitParents  Try to force offline split parents to be online.
+   -ignorePreCheckPermission  ignore filesystem permission pre-check
+   -fixReferenceFiles  Try to offline lingering reference store files
+   -fixEmptyMetaCells  Try to fix hbase:meta entries not referencing any region (empty REGIONINFO_QUALIFIER rows)
+
+  Datafile Repair options: (expert features, use with caution!)
+   -checkCorruptHFiles     Check all Hfiles by opening them to make sure they are valid
+   -sidelineCorruptHFiles  Quarantine corrupted HFiles.  implies -checkCorruptHFiles
+
+  Metadata Repair shortcuts
+   -repair           Shortcut for -fixAssignments -fixMeta -fixHdfsHoles -fixHdfsOrphans -fixHdfsOverlaps -fixVersionFile -sidelineBigOverlaps -fixReferenceFiles -fixTableLocks -fixOrphanedTableZnodes
+   -repairHoles      Shortcut for -fixAssignments -fixMeta -fixHdfsHoles
+
+  Table lock options
+   -fixTableLocks    Deletes table locks held for a long time (hbase.table.lock.expire.ms, 10min by default)
+
+  Table Znode options
+   -fixOrphanedTableZnodes    Set table state in ZNode to disabled if table does not exists
+
+ Replication options
+   -fixReplication   Deletes replication queues for removed peers

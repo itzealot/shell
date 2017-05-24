@@ -1,0 +1,23 @@
+# partition 个数
+num.partitions=3
+
+# 集群 brokerId(集群唯一)
+broker.id=1
+
+# zookeeper上的路径
+zookeeper.chroot=/kafka
+
+# The default replication factor for automatically created topics.
+default.replication.factor=2
+
+# Kafka原始日志存储目录，多个用逗号分割，不同盘
+log.dirs=dir1,dir2,dir3
+
+# broker max heap
+broker_max_heap_size=1g
+
+# default
+broker_java_opts=-server -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+CMSScavengeBeforeRemark -XX:+DisableExplicitGC -Djava.awt.headless=true
+
+log.retention.hours=7天
+log.cleaner.delete.retention.ms=7天

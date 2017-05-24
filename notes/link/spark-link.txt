@@ -1,0 +1,40 @@
+[shuffle opt]
+http://blog.csdn.net/xiaolang85/article/details/51705088
+
+[spark source]
+https://github.com/apache/spark/blob/branch-1.6/core
+
+[spark 优化]
+http://blog.csdn.net/lsshlsw/article/details/49155087
+
+[spark-driver-disconnected]
+http://www.ibm.com/developerworks/cn/opensource/os-cn-spark-core/index.html?ca=drs-&utm_medium=referral
+
+[spark性能调优]
+http://www.csdn.net/article/2015-07-08/2825160
+
+[spark streaming with kafka,数据0丢失]
+https://www.iteblog.com/archives/1591.html
+
+[spark streaming原理]
+http://www.cnblogs.com/shishanyuan/p/4747735.html
+
+[spark 问题及优化]
+http://blog.csdn.net/stark_summer/article/details/42981201
+
+[impala with hbase]
+http://shiyanjun.cn/archives/526.html
+
+spark-shell --total-executor-cores 30 --executor-memory 5g
+
+[spark problems and solve]
+http://www.ithao123.cn/content-10383385.html
+
+[spark 2.1.0 params docs]
+http://spark.apache.org/docs/latest/configuration.html
+
+[spark 1.6.2 configuration]
+http://spark.apache.org/docs/1.6.2/configuration.html#application-properties
+
+[spark memory]
+http://marsishandsome.github.io/slides/gen/SparkMemoryManagement.html#slide22

@@ -1,0 +1,358 @@
+2017-04-28 09:26:42
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.101-b13 mixed mode):
+
+"Attach Listener" #34 daemon prio=9 os_prio=0 tid=0x00007f3374001000 nid=0x288a waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-10" #33 prio=5 os_prio=0 tid=0x00007f3410694800 nid=0x7d9d waiting on condition [0x00007f33ccca3000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-9" #32 prio=5 os_prio=0 tid=0x00007f3410693000 nid=0x7d9c waiting on condition [0x00007f33ccda4000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-8" #31 prio=5 os_prio=0 tid=0x00007f3410691000 nid=0x7d9b waiting on condition [0x00007f33ccea5000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-7" #30 prio=5 os_prio=0 tid=0x00007f341068f800 nid=0x7d9a waiting on condition [0x00007f33ccfa6000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-6" #29 prio=5 os_prio=0 tid=0x00007f341068d800 nid=0x7d99 waiting on condition [0x00007f33cd0a7000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-5" #28 prio=5 os_prio=0 tid=0x00007f341068c000 nid=0x7d98 waiting on condition [0x00007f33cd1a8000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-4" #27 prio=5 os_prio=0 tid=0x00007f341068a800 nid=0x7d97 waiting on condition [0x00007f33cd2a9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-3" #26 prio=5 os_prio=0 tid=0x00007f3410688800 nid=0x7d96 waiting on condition [0x00007f33cd3aa000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-2" #25 prio=5 os_prio=0 tid=0x00007f3410687000 nid=0x7d95 waiting on condition [0x00007f33cd4ab000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-1-thread-1" #24 prio=5 os_prio=0 tid=0x00007f3410685800 nid=0x7d94 waiting on condition [0x00007f33cd6ad000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006c00161a8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+   Locked ownable synchronizers:
+	- None
+
+"commons-pool-EvictionTimer" #23 daemon prio=5 os_prio=0 tid=0x00007f341067f800 nid=0x7d93 in Object.wait() [0x00007f33cd5ac000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000006c001a6b0> (a java.util.TaskQueue)
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	- locked <0x00000006c001a6b0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Timer.java:505)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #20 daemon prio=9 os_prio=0 tid=0x00007f3410108800 nid=0x7d8c runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread14" #19 daemon prio=9 os_prio=0 tid=0x00007f34100fd800 nid=0x7d8b waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread13" #18 daemon prio=9 os_prio=0 tid=0x00007f34100fb800 nid=0x7d8a waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread12" #17 daemon prio=9 os_prio=0 tid=0x00007f34100f9800 nid=0x7d89 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread11" #16 daemon prio=9 os_prio=0 tid=0x00007f34100f7800 nid=0x7d88 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread10" #15 daemon prio=9 os_prio=0 tid=0x00007f34100f5800 nid=0x7d87 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread9" #14 daemon prio=9 os_prio=0 tid=0x00007f34100f3000 nid=0x7d86 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread8" #13 daemon prio=9 os_prio=0 tid=0x00007f34100f1000 nid=0x7d85 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread7" #12 daemon prio=9 os_prio=0 tid=0x00007f34100ef000 nid=0x7d84 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread6" #11 daemon prio=9 os_prio=0 tid=0x00007f34100ec800 nid=0x7d83 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread5" #10 daemon prio=9 os_prio=0 tid=0x00007f34100ea800 nid=0x7d82 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread4" #9 daemon prio=9 os_prio=0 tid=0x00007f34100e8800 nid=0x7d81 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread3" #8 daemon prio=9 os_prio=0 tid=0x00007f34100e6800 nid=0x7d80 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread2" #7 daemon prio=9 os_prio=0 tid=0x00007f34100e4000 nid=0x7d7f waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #6 daemon prio=9 os_prio=0 tid=0x00007f34100e2800 nid=0x7d7e waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #5 daemon prio=9 os_prio=0 tid=0x00007f34100df800 nid=0x7d7d waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=0 tid=0x00007f34100de000 nid=0x7d7c runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=0 tid=0x00007f34100ab000 nid=0x7d7b in Object.wait() [0x00007f33dcad5000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000006c001afd8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000006c001afd8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=0 tid=0x00007f34100a6800 nid=0x7d7a in Object.wait() [0x00007f337fffe000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000006c0016fb0> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	- locked <0x00000006c0016fb0> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+   Locked ownable synchronizers:
+	- None
+
+"main" #1 prio=5 os_prio=0 tid=0x00007f341000a000 nid=0x7d60 waiting on condition [0x00007f3414cac000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at com.surfilter.mass.tools.util.Threads.sleep(Threads.java:29)
+	at com.surfilter.mass.tools.util.ParseRelationUtil.readCertification2RowKey(ParseRelationUtil.java:80)
+	at com.surfilter.mass.tools.RedisCertificationUpdateApp.main(RedisCertificationUpdateApp.java:83)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=0 tid=0x00007f341009f000 nid=0x7d79 runnable
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x00007f341001f800 nid=0x7d62 runnable
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x00007f3410021800 nid=0x7d63 runnable
+
+"GC task thread#2 (ParallelGC)" os_prio=0 tid=0x00007f3410023000 nid=0x7d64 runnable
+
+"GC task thread#3 (ParallelGC)" os_prio=0 tid=0x00007f3410025000 nid=0x7d65 runnable
+
+"GC task thread#4 (ParallelGC)" os_prio=0 tid=0x00007f3410026800 nid=0x7d66 runnable
+
+"GC task thread#5 (ParallelGC)" os_prio=0 tid=0x00007f3410028800 nid=0x7d67 runnable
+
+"GC task thread#6 (ParallelGC)" os_prio=0 tid=0x00007f341002a000 nid=0x7d68 runnable
+
+"GC task thread#7 (ParallelGC)" os_prio=0 tid=0x00007f341002c000 nid=0x7d69 runnable
+
+"GC task thread#8 (ParallelGC)" os_prio=0 tid=0x00007f341002d800 nid=0x7d6a runnable
+
+"GC task thread#9 (ParallelGC)" os_prio=0 tid=0x00007f341002f800 nid=0x7d6b runnable
+
+"GC task thread#10 (ParallelGC)" os_prio=0 tid=0x00007f3410031000 nid=0x7d6c runnable
+
+"GC task thread#11 (ParallelGC)" os_prio=0 tid=0x00007f3410033000 nid=0x7d6d runnable
+
+"GC task thread#12 (ParallelGC)" os_prio=0 tid=0x00007f3410034800 nid=0x7d6e runnable
+
+"GC task thread#13 (ParallelGC)" os_prio=0 tid=0x00007f3410036800 nid=0x7d6f runnable
+
+"GC task thread#14 (ParallelGC)" os_prio=0 tid=0x00007f3410038000 nid=0x7d70 runnable
+
+"GC task thread#15 (ParallelGC)" os_prio=0 tid=0x00007f341003a000 nid=0x7d71 runnable
+
+"GC task thread#16 (ParallelGC)" os_prio=0 tid=0x00007f341003b800 nid=0x7d72 runnable
+
+"GC task thread#17 (ParallelGC)" os_prio=0 tid=0x00007f341003d800 nid=0x7d73 runnable
+
+"GC task thread#18 (ParallelGC)" os_prio=0 tid=0x00007f341003f000 nid=0x7d74 runnable
+
+"GC task thread#19 (ParallelGC)" os_prio=0 tid=0x00007f3410041000 nid=0x7d75 runnable
+
+"GC task thread#20 (ParallelGC)" os_prio=0 tid=0x00007f3410042800 nid=0x7d76 runnable
+
+"GC task thread#21 (ParallelGC)" os_prio=0 tid=0x00007f3410044800 nid=0x7d77 runnable
+
+"GC task thread#22 (ParallelGC)" os_prio=0 tid=0x00007f3410046000 nid=0x7d78 runnable
+
+"VM Periodic Task Thread" os_prio=0 tid=0x00007f341010c000 nid=0x7d8d waiting on condition
+
+JNI global references: 55
+

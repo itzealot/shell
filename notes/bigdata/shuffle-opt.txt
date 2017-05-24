@@ -1,0 +1,28 @@
+[shuffle 调优]
+http://www.cnblogs.com/hd-zg/p/6089230.html
+
+[shuffle 调优]
+http://www.uml.org.cn/sjjm/2016060210.asp
+
+[shuffle opt]
+http://blog.csdn.net/u011007180/article/details/51932466
+
+# shuffle dir,配置多个目录
+SPARK_LOCAL_DIRS=
+
+https://issues.apache.org/jira/browse/SPARK-13631
+spark.shuffle.reduceLocality.enabled
+
+
+Driver代码=SparkConf+SparkContext
+
+https://issues.apache.org/jira/browse/SPARK-7827
+
+spark.task.maxFailures=8
+refresh.leader.backoff.ms=2000
+
+https://issues.apache.org/jira/browse/SPARK-13631
+getPreferredLocations
+
+spark.shuffle.reduceLocality.enabled=false
+

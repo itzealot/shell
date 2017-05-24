@@ -1,0 +1,21 @@
+su hbase
+
+vim /etc/passwd
+修改hbase 为/bin/bash
+
+su hbase
+
+# 校验hbase元数据
+hbase hbck
+
+# 修复hbase元数据
+hbase hbck -repair
+
+# 校验hdfs的块
+hadoop fsck
+
+# 校验并删除hdfs的坏块
+hadoop fsck / -delete
+
+# 检查 hbase hfile
+hbase hbck -checkCorruptHFiles

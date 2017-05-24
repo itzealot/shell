@@ -1,0 +1,41 @@
+create 'test_hbase2Hive',{NAME => 'f1',VERSIONS => 1}, {NAME => 'f2',VERSIONS => 1}, {NAME => 'f3',VERSIONS => 1}
+
+put 'test_hbase2Hive','rowkey','f1:c1','name1'
+put 'test_hbase2Hive','rowkey','f1:c2','name2'
+put 'test_hbase2Hive','rowkey','f2:c1','age1'
+put 'test_hbase2Hive','rowkey','f2:c2','age2'
+put 'test_hbase2Hive','rowkey','f3:c1','job1'
+put 'test_hbase2Hive','rowkey','f3:c2','job2'
+put 'test_hbase2Hive','rowkey','f3:c3','job3'
+
+# SET hbase.zookeeper.quorum=zkNode1,zkNode2,zkNode3;
+# SET zookeeper.znode.parent=/hbase;
+# ADD jar /usr/local/apache-hive-0.13.1-bin/lib/hive-hbase-handler-0.13.1.jar;
+
+--map column family
+CREATE EXTERNAL TABLE test_hbase2Hive (
+rowkey string,
+f1 map<STRING,STRING>,
+f2 map<STRING,STRING>,
+f3 map<STRING,STRING>
+) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,f1:,f2:,f3:")
+TBLPROPERTIES ("hbase.table.name" = "test_hbase2Hive");
+
+INSERT INTO TABLE lxw1234 SELECT 'row1' AS rowkey, map('c3','name3') AS f1, map('c3','age3') AS f2, map('c4','job3') AS f3 FROM DUAL limit 1;
+
+再到hbase中进行查询，则hbase中记录也相应增加；Hive中的外部表 test_hbase2Hive，就和其他外部表一样，只有一份元数据，真正的数据是在HBase表中，Hive通过hive-hbase-handler来操作HBase中的表。
+
+--map table with column
+CREATE EXTERNAL TABLE hbase_relation_map_hive (
+rowkey string,
+discover_times bigint,
+first_terminal_num string,
+first_start_time bigint
+) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:discover_times,cf:first_terminal_num,cf:first_start_time")
+TBLPROPERTIES ("hbase.table.name" = "relation");
+
+CREATE EXTERNAL TABLE rzxdata.hbase_relation_map (rowkey string, first_terminal_num string) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:first_terminal_num") TBLPROPERTIES ("hbase.table.name" = "relation");
+
+nohup hive -e "CREATE EXTERNAL TABLE rzxdata.hbase_relation_map (rowkey string, first_terminal_num string) STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler' WITH SERDEPROPERTIES ("hbase.columns.mapping" = ":key,cf:first_terminal_num") TBLPROPERTIES ("hbase.table.name" = "relation");" &
